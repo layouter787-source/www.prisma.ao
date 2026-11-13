@@ -160,3 +160,18 @@
     border-radius:18px;padding:20px;
   }
 }
+
+/* Galeria industrial PRISMA — fotografia, alinhamento e responsividade */
+.production-gallery{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:14px;margin-top:18px;align-items:stretch}
+.production-photo{position:relative;display:block;min-height:230px;height:100%;overflow:hidden;border-radius:20px;border:1px solid #d8e3ed;background:#e8eff5}
+.production-photo-wide{min-height:280px}
+.production-photo img{display:block;width:100%;height:100%;min-height:230px;object-fit:cover;transition:transform .45s ease}
+.production-photo-wide img{min-height:280px}
+.production-photo:hover img{transform:scale(1.025)}
+.production-photo:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(8,30,55,.78));pointer-events:none}
+.production-photo figcaption{position:absolute;z-index:1;left:18px;right:18px;bottom:17px;display:grid;gap:6px;color:#fff}
+.production-photo figcaption span{font-size:8px;letter-spacing:.16em;color:#d8e9f8}
+.production-photo figcaption strong{font:600 15px Manrope,sans-serif}
+.production-footnote{font-size:10px;line-height:1.6;color:#7a8999;margin:12px 0 0}
+@media(max-width:850px){.production-gallery{grid-template-columns:1fr 1fr}.production-photo-wide{grid-column:1/-1}.production-photo,.production-photo img{min-height:210px}.production-photo-wide,.production-photo-wide img{min-height:250px}}
+@media(max-width:640px){.production-gallery{grid-template-columns:1fr;gap:11px}.production-photo,.production-photo-wide,.production-photo img,.production-photo-wide img{min-height:220px}.production-photo-wide{grid-column:auto}.production-photo figcaption{left:15px;bottom:14px}}
