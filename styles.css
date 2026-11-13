@@ -175,3 +175,18 @@
 .production-footnote{font-size:10px;line-height:1.6;color:#7a8999;margin:12px 0 0}
 @media(max-width:850px){.production-gallery{grid-template-columns:1fr 1fr}.production-photo-wide{grid-column:1/-1}.production-photo,.production-photo img{min-height:210px}.production-photo-wide,.production-photo-wide img{min-height:250px}}
 @media(max-width:640px){.production-gallery{grid-template-columns:1fr;gap:11px}.production-photo,.production-photo-wide,.production-photo img,.production-photo-wide img{min-height:220px}.production-photo-wide{grid-column:auto}.production-photo figcaption{left:15px;bottom:14px}}
+
+/* PRISMA liquid-water identity: crisp vector splash, never blurred */
+.hero{background:#061a35;isolation:isolate}
+.water-splash-theme{position:absolute;z-index:0;pointer-events:none;width:min(76vw,920px);height:auto;right:-7%;top:2%;overflow:visible}
+.water-splash-theme .splash-body{fill:rgba(43,116,190,.13);stroke:rgba(154,213,255,.48);stroke-width:7;stroke-linejoin:round}
+.water-splash-theme .splash-edge{fill:none;stroke:rgba(226,246,255,.84);stroke-width:2.2;stroke-linejoin:round}
+.water-splash-theme .splash-highlight{fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;opacity:.78}
+.water-splash-theme .splash-drops circle{fill:#d9f2ff;stroke:#fff;stroke-width:2}
+.hero-content,.hero-bottom{z-index:1}
+.hero .hero-copy{position:relative;z-index:2}
+.hero .product-stage{position:relative;z-index:2}
+.production{position:relative;isolation:isolate}
+.production:before{content:"";position:absolute;pointer-events:none;z-index:-1;right:-90px;top:35px;width:300px;height:300px;border:1px solid rgba(46,115,177,.12);border-radius:48% 52% 61% 39%;transform:rotate(32deg)}
+.contact{background:#071d3b}
+@media(max-width:640px){.water-splash-theme{width:125vw;right:-34%;top:12%;opacity:.72}.hero-content{z-index:1}}
