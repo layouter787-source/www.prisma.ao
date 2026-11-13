@@ -110,7 +110,6 @@
 }
 @media(prefers-reduced-motion:reduce){.prisma-bottle{animation:none!important}}
 
-/* Regra explícita: PRISMA não utiliza blur, backdrop-filter, filtros de sombra ou sombras desfocadas. */
 
 
 /* PRISMA — Liquid Glass CLEAR: transparência óptica, sem Frosted Glass e sem blur. */
