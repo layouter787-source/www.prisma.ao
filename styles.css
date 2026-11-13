@@ -141,9 +141,7 @@
 .site-header .nav-cta:hover{background:rgba(255,255,255,.07)!important}
 .float-card,.photo-glass-card,.contact-panel{
   background:transparent!important;
-  -webkit-backdrop-filter:none!important;
-  backdrop-filter:none!important;
-  box-shadow:none!important;
+
   border:1px solid rgba(255,255,255,.34)!important;
 }
 .float-card:before,.photo-glass-card:before{
