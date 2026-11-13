@@ -72,3 +72,58 @@
 @supports not ((backdrop-filter:blur(2px)) or (-webkit-backdrop-filter:blur(2px))){
  .photo-glass-card,.photo-floating-tag,.contact-panel{background:rgba(18,48,80,.9)}
 }
+
+
+/* PRISMA refresh — embalagem em destaque, interface limpa e vidro sem blur */
+:root{--navy:#102b52;--blue:#245da5;--ink:#17283d;--line:#dce6ef}
+.site-header{height:76px;background:rgba(255,255,255,.88);border-bottom:1px solid #e8eef4}
+.nav-cta{background:transparent!important;color:var(--navy)!important;border:1px solid rgba(36,93,165,.28);border-radius:999px;padding:12px 20px}
+.nav-cta:hover{background:rgba(36,93,165,.06)!important}
+.hero{min-height:650px;border-radius:0 0 34px 34px;background:#102b52}
+.hero-content{min-height:575px;grid-template-columns:1fr 1fr}
+.hero-copy{padding:70px 0}
+.hero h1{font-size:clamp(56px,6.5vw,82px)}
+.hero-lead{max-width:390px;font-size:16px}
+.hero-art.product-stage{height:520px;display:flex;align-items:center;justify-content:center;position:relative;transform:none}
+.product-halo{position:absolute;width:390px;height:390px;border:1px solid rgba(255,255,255,.13);border-radius:50%}
+.product-halo:after{content:"";position:absolute;inset:35px;border:1px solid rgba(255,255,255,.1);border-radius:50%}
+.prisma-bottle{position:relative;width:214px;height:455px;filter:drop-shadow(0 25px 26px rgba(0,0,0,.18));animation:product-float 5s ease-in-out infinite}
+.bottle-cap-large{position:absolute;z-index:5;top:0;left:77px;width:60px;height:39px;border-radius:9px 9px 5px 5px;background:#168bd0;border:1px solid #75c9f1;box-shadow:inset 0 4px 0 rgba(255,255,255,.25);background-image:repeating-linear-gradient(90deg,transparent 0 4px,rgba(0,52,112,.24) 4px 6px)}
+.bottle-neck-large{position:absolute;top:34px;left:79px;width:56px;height:54px;border:2px solid rgba(199,235,255,.8);border-radius:8px 8px 5px 5px;background:rgba(220,246,255,.13)}
+.bottle-shoulder{position:absolute;top:76px;left:24px;width:166px;height:83px;border:2px solid rgba(208,239,255,.82);border-bottom:0;border-radius:48% 48% 5px 5px/60% 60% 5px 5px;background:rgba(221,246,255,.09)}
+.bottle-main{position:absolute;top:132px;left:21px;width:172px;height:306px;border:2px solid rgba(207,239,255,.88);border-radius:25px 25px 35px 35px/20px 20px 28px 28px;background:rgba(224,247,255,.12);overflow:hidden;box-shadow:inset 9px 0 12px rgba(255,255,255,.17),inset -7px 0 12px rgba(113,193,237,.11)}
+.bottle-water{position:absolute;left:2px;right:2px;bottom:4px;height:62%;background:rgba(161,221,248,.13);border-top:1px solid rgba(224,249,255,.8)}
+.bottle-label{position:absolute;z-index:3;left:-2px;right:-2px;top:105px;height:85px;background:#12518e;border-top:3px solid #62b4e7;border-bottom:3px solid #62b4e7;color:#fff;display:flex;align-items:center;justify-content:center;flex-direction:column;box-shadow:0 3px 12px rgba(0,36,78,.15)}
+.label-symbol{font:800 14px Manrope,sans-serif;line-height:1;color:#bfe8ff}
+.bottle-label strong{font:800 23px Manrope,sans-serif;letter-spacing:.1em;line-height:1.2}
+.bottle-label small{font:600 8px "DM Sans",sans-serif;letter-spacing:.22em}
+.bottle-label i{font:500 5px "DM Sans",sans-serif;letter-spacing:.16em;margin-top:5px;color:#d9efff}
+.bottle-rib{position:absolute;left:0;right:0;height:9px;border-top:1px solid rgba(223,247,255,.75);border-bottom:1px solid rgba(132,192,224,.28);border-radius:50%}
+.rib-one{top:28px}.rib-two{bottom:65px}.rib-three{bottom:38px}
+.bottle-base{position:absolute;bottom:0;left:13px;right:13px;height:17px;border-top:2px solid rgba(218,246,255,.7);border-radius:50%}
+.bottle-shine{position:absolute;top:164px;left:36px;width:13px;height:215px;border-radius:50%;background:rgba(255,255,255,.35);filter:none}
+.product-caption{position:absolute;bottom:20px;right:5px;color:#b9d1e9;font-size:9px;letter-spacing:.2em}
+@keyframes product-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.hero-note{margin-top:38px}
+.hero-bottom{border-color:rgba(255,255,255,.15)}
+.section-pad{padding:82px 0}
+.intro-layout{grid-template-columns:24% 1fr;gap:38px}
+.intro h2,.section-heading h2,.values h2{font-size:clamp(36px,4.2vw,52px)}
+.body-large{font-size:16px;line-height:1.75;max-width:650px}
+.production{background:#f7f9fb}
+.production-heading{grid-template-columns:24% 1fr;gap:38px;margin-bottom:30px}
+.production-heading h2{font-size:clamp(36px,4.2vw,52px)}
+.factory-scene{min-height:330px;border-radius:24px}
+.values-layout{grid-template-columns:38% 1fr;gap:55px}
+.values-list{grid-template-columns:1fr 1fr;gap:25px}
+.contact{border-radius:28px 28px 0 0}
+.contact-panel{background:transparent;border:1px solid rgba(255,255,255,.25);backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border-radius:22px}
+.button-white{border-radius:999px}
+.footer{padding-top:27px}
+.back-top{border-radius:999px}
+.photo-glass-card,.photo-floating-tag,.float-card{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+@media(max-width:850px){.hero-content{grid-template-columns:1fr .85fr}.prisma-bottle{transform:scale(.88)}.hero-art.product-stage{height:440px}.product-halo{width:320px;height:320px}.production-heading{grid-template-columns:1fr 1.5fr}}
+@media(max-width:640px){
+.site-header{height:68px}.nav-links{top:68px}.hero{border-radius:0 0 24px 24px}.hero-content{display:flex;flex-direction:column;align-items:stretch;min-height:0}.hero-copy{padding:62px 0 5px}.hero h1{font-size:56px}.hero-art.product-stage{height:420px;margin:0}.prisma-bottle{transform:scale(.86);transform-origin:center}.product-halo{width:300px;height:300px}.product-caption{bottom:12px;right:12px}.hero-note{margin-top:28px}.hero-bottom{font-size:8px}.section-pad{padding:66px 0}.intro-layout,.values-layout{grid-template-columns:1fr;gap:24px}.intro h2,.values h2,.production-heading h2{font-size:39px}.body-large{font-size:15px}.production-heading{grid-template-columns:1fr;gap:14px}.factory-scene{min-height:300px;padding:16px 12px}.factory-machine{top:62px;height:195px;left:3%;right:3%}.machine-head{height:31px;font-size:7px}.machine-nozzles{top:31px;height:35px}.machine-nozzles i{height:32px}.bottle-lane{bottom:25px;height:105px;left:2%;right:2%}.pet-bottle{transform:scale(.82);transform-origin:bottom center;margin:0 -3px}.factory-bottom{left:12px;right:12px;bottom:14px;font-size:6px;letter-spacing:.04em}.conveyor{height:23px}.machine-legs{bottom:-18px}.values-list{gap:15px}.contact{border-radius:22px 22px 0 0}.contact-layout{grid-template-columns:1fr;gap:25px}.contact h2{font-size:45px}.contact-panel{padding:25px 20px}.footer-bottom{gap:12px;flex-direction:column;align-items:flex-start}
+}
+@media(prefers-reduced-motion:reduce){.prisma-bottle{animation:none!important}}
