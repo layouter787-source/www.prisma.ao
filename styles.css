@@ -111,3 +111,52 @@
 @media(prefers-reduced-motion:reduce){.prisma-bottle{animation:none!important}}
 
 /* Regra explícita: PRISMA não utiliza blur, backdrop-filter, filtros de sombra ou sombras desfocadas. */
+
+
+/* PRISMA — Liquid Glass CLEAR: transparência óptica, sem Frosted Glass e sem blur. */
+.site-header{
+  position:absolute;inset:0 0 auto;height:88px;
+  background:transparent!important;
+  border:0;
+}
+.site-header .nav{
+  position:relative;top:13px;height:62px;
+  width:min(1160px,calc(100% - 48px));
+  padding:0 22px;border-radius:999px;
+  background:rgba(255,255,255,.018)!important;
+  border:1px solid rgba(255,255,255,.34);
+  outline:1px solid rgba(255,255,255,.07);
+  outline-offset:-4px;
+}
+.site-header .nav:before{
+  content:"";position:absolute;inset:1px 16px auto;height:1px;
+  background:rgba(255,255,255,.62);pointer-events:none;
+}
+.site-header .nav-links{color:rgba(255,255,255,.94)}
+.site-header .nav-links>a:not(.nav-cta):hover{color:#fff}
+.site-header .nav-cta{
+  color:#fff!important;background:transparent!important;
+  border:1px solid rgba(255,255,255,.48)!important;
+}
+.site-header .nav-cta:hover{background:rgba(255,255,255,.07)!important}
+.float-card,.photo-glass-card,.contact-panel{
+  background:transparent!important;
+  -webkit-backdrop-filter:none!important;
+  backdrop-filter:none!important;
+  box-shadow:none!important;
+  border:1px solid rgba(255,255,255,.34)!important;
+}
+.float-card:before,.photo-glass-card:before{
+  content:"";position:absolute;inset:1px 12px auto;height:1px;
+  background:rgba(255,255,255,.48);pointer-events:none;
+}
+.float-card,.photo-glass-card{overflow:hidden}
+@media(max-width:640px){
+  .site-header{height:70px}
+  .site-header .nav{top:8px;width:calc(100% - 28px);height:54px;padding:0 15px}
+  .site-header .nav-links{
+    top:64px;background:#102b52!important;
+    border:1px solid rgba(255,255,255,.24);
+    border-radius:18px;padding:20px;
+  }
+}
