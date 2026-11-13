@@ -16,3 +16,9 @@ Depois da ligação inicial, os pushes para a branch de produção configurada g
 
 ## Nota
 PRISMA é uma marca e empresa fictícias para fins demonstrativos. Contactos, endereço de e-mail, serviços e dados institucionais são exemplos e devem ser substituídos antes de uso comercial.
+
+
+## Imagens e créditos
+- Fotografia da linha de garrafas PET: Vladimir Srajber / Pexels, licença gratuita Pexels: https://www.pexels.com/photo/bottles-of-water-in-factory-18631424/
+- Fotografia da linha de enchimento: Mina Rad / Unsplash, Unsplash License: https://unsplash.com/photos/bottles-being-filled-on-an-automated-production-line-GiuvVfcNFzY
+As imagens são carregadas dos respectivos CDNs; não foram copiadas para a pasta do repositório nesta actualização.
